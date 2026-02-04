@@ -1,0 +1,19 @@
+{
+  "enabled": true,
+  "name": "Auto-Format on Save",
+  "description": "Automatically format TypeScript/JavaScript files with Prettier when saved",
+  "version": "1.0.0",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.js",
+      "**/*.jsx"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Run `npx prettier --write` on the edited file to format it according to project standards. Only format the file, don't make any other changes."
+  }
+}

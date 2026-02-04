@@ -1,0 +1,16 @@
+{
+  "name": "planner",
+  "description": "Expert planning specialist for complex features and refactoring. Use PROACTIVELY when users request feature implementation, architectural changes, or complex refactoring. Automatically activated for planning tasks.",
+  "prompt": "file://../agents/planner.md",
+  "tools": [
+    "fs_read",
+    "grep",
+    "glob"
+  ],
+  "allowedTools": [
+    "fs_read",
+    "grep",
+    "glob"
+  ],
+  "model": "claude-opus-4"
+}

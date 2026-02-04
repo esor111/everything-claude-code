@@ -1,0 +1,21 @@
+{
+  "enabled": true,
+  "name": "Security Scan on Save",
+  "description": "Scan for hardcoded secrets and security issues when code files are edited",
+  "version": "1.0.0",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.js",
+      "**/*.jsx",
+      "**/*.py",
+      "**/*.go"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Scan the edited file for security issues: hardcoded API keys (sk-, api_key, password), SQL injection risks, XSS vulnerabilities. Report any findings with severity level."
+  }
+}

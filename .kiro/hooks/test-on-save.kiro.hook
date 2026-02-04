@@ -1,0 +1,19 @@
+{
+  "enabled": true,
+  "name": "Run Tests on Save",
+  "description": "Run relevant tests when code files are saved",
+  "version": "1.0.0",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.js",
+      "**/*.jsx"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Run tests related to the edited file. If a test file exists (*.test.ts or *.spec.ts), run it. Otherwise, suggest creating tests if none exist."
+  }
+}

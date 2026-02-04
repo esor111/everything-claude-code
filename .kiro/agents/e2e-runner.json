@@ -1,0 +1,15 @@
+{
+  "name": "e2e-runner",
+  "displayName": "E2E Test Runner",
+  "description": "End-to-end testing specialist using Vercel Agent Browser (preferred) with Playwright fallback. Use PROACTIVELY for generating, maintaining, and running E2E tests. Manages test journeys, quarantines flaky tests, uploads artifacts (screenshots, videos, traces), and ensures critical user flows work.",
+  "prompt": "file://../agents/e2e-runner.md",
+  "model": "claude-opus-4",
+  "allowedTools": [
+    "fs_read",
+    "fs_write",
+    "fs_edit",
+    "execute_bash",
+    "grep",
+    "glob"
+  ]
+}

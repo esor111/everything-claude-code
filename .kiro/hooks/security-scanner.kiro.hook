@@ -1,0 +1,13 @@
+Title: Security Scanner
+Description: Scan for hardcoded secrets and security issues when code files are saved
+Event: File Saved
+File path(s) to watch: **/*.{ts,tsx,js,jsx}
+Action: Ask Kiro
+
+Instructions for Kiro agent:
+Scan the saved file for security issues:
+1. Hardcoded API keys (look for: sk-, api_key, password, token, secret)
+2. SQL injection risks (string concatenation in database queries)
+3. XSS vulnerabilities (unescaped HTML rendering)
+
+Report any findings with severity level (CRITICAL/HIGH/MEDIUM). If no issues found, stay silent.

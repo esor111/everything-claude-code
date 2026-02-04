@@ -1,0 +1,16 @@
+{
+  "name": "architect",
+  "description": "Software architecture specialist for system design, scalability, and technical decision-making. Use PROACTIVELY when planning new features, refactoring large systems, or making architectural decisions.",
+  "prompt": "file://../agents/architect.md",
+  "tools": [
+    "fs_read",
+    "grep",
+    "glob"
+  ],
+  "allowedTools": [
+    "fs_read",
+    "grep",
+    "glob"
+  ],
+  "model": "claude-opus-4"
+}

@@ -1,0 +1,10 @@
+Title: Check Console.log
+Description: Check for console.log statements after agent completes and warn before committing
+Event: Agent Stop
+Action: Ask Kiro
+
+Instructions for Kiro agent:
+Check all modified files for console.log statements. Run this command:
+grep -rn "console.log" --include="*.ts" --include="*.tsx" --include="*.js" --include="*.jsx" src/
+
+If any console.log statements are found, warn me to remove them before committing. List the file names and line numbers.

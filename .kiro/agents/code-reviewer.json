@@ -1,0 +1,18 @@
+{
+  "name": "code-reviewer",
+  "description": "Expert code review specialist. Proactively reviews code for quality, security, and maintainability. Use immediately after writing or modifying code. MUST BE USED for all code changes.",
+  "prompt": "file://../agents/code-reviewer.md",
+  "tools": [
+    "fs_read",
+    "grep",
+    "glob",
+    "execute_bash"
+  ],
+  "allowedTools": [
+    "fs_read",
+    "grep",
+    "glob",
+    "execute_bash"
+  ],
+  "model": "claude-opus-4"
+}

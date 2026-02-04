@@ -1,0 +1,8 @@
+Title: TS File Formatter
+Description: Automatically runs Prettier to reformat TypeScript files whenever they are saved
+Event: File Saved
+File path(s) to watch: **/*.ts
+Action: Shell Command
+
+Shell command:
+npx prettier --write "$filePath"

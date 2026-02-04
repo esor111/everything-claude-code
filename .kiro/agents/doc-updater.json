@@ -1,0 +1,15 @@
+{
+  "name": "doc-updater",
+  "displayName": "Documentation & Codemap Specialist",
+  "description": "Documentation and codemap specialist. Use PROACTIVELY for updating codemaps and documentation. Runs /update-codemaps and /update-docs, generates docs/CODEMAPS/*, updates READMEs and guides.",
+  "prompt": "file://../agents/doc-updater.md",
+  "model": "claude-opus-4",
+  "allowedTools": [
+    "fs_read",
+    "fs_write",
+    "fs_edit",
+    "execute_bash",
+    "grep",
+    "glob"
+  ]
+}

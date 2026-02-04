@@ -1,0 +1,15 @@
+{
+  "name": "refactor-cleaner",
+  "displayName": "Refactor & Dead Code Cleaner",
+  "description": "Dead code cleanup and consolidation specialist. Use PROACTIVELY for removing unused code, duplicates, and refactoring. Runs analysis tools (knip, depcheck, ts-prune) to identify dead code and safely removes it.",
+  "prompt": "file://../agents/refactor-cleaner.md",
+  "model": "claude-opus-4",
+  "allowedTools": [
+    "fs_read",
+    "fs_write",
+    "fs_edit",
+    "execute_bash",
+    "grep",
+    "glob"
+  ]
+}
